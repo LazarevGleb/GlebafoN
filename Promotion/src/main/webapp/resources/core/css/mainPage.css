@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #17a2b8;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.myBtn {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.myBtn:hover {
+    opacity: 1;
+}

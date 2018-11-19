@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>Promotion</title>
+    <h:outputStylesheet name="core/css/bootstrap.min.css"/>
+    <h:outputStylesheet name="core/css/modal.css"/>
+</h:head>
+
+<h:body>
+    <div style="margin-top: 50px; margin-left: 50px; margin-right: 20px">
+        <table class="table table-striped text-center" style="font-size: x-large">
+            <thead>
+            <tr class="thead-dark">
+                <th>Name</th>
+                <th>Sms</th>
+                <th>Minutes</th>
+                <th>Internet</th>
+                <th>Price</th>
+                <th>Options</th>
+            </tr>
+            </thead>
+            <tbody id="promoTable">
+            </tbody>
+            <tfoot>
+            <tr class="thead-dark">
+                <th>Name</th>
+                <th>Sms</th>
+                <th>Minutes</th>
+                <th>Internet</th>
+                <th>Price</th>
+                <th>Options</th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div id="optionsModal" class="modal">
+        <div class="modal-content" style="height: auto; width: auto; top:100px; left: 1200px">
+            <div class="modal-header">
+                <h2>Options</h2>
+                <span id="optionsSpan" class="close">&times;</span>
+            </div>
+            <table class="table table-striped text-center" style="font-size: large">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Activation cost</th>
+                </tr>
+                </thead>
+                <tbody id="optionsTBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h:outputScript library="core" name="jquery/jquery-3.3.1.min.js"/>
+    <h:outputScript library="core" name="popper/popper.min.js"/>
+    <h:outputScript library="core" name="js/bootstrap.min.js"/>
+    <h:outputScript library="js" name="websocket.js"/>
+</h:body>
+</html>
